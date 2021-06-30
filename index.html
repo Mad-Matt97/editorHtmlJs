@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Código</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+</head>
+<body>
+    <script>alert("Bienvenido al intérprete de código HTML, por favor introduce tú código")</script>
+    <div class="container">
+    <textarea
+    onkeyup="update()" id="textarea" class="textarea" placeholder="Escribe tu código aquí"></textarea>
+    <iframe id="view" srcdoc="Hola mundo" frameborder="0"></iframe>
+</div>
+<script src="./js/bundle/app.dev.js"></script>
+</body>
+</html>
